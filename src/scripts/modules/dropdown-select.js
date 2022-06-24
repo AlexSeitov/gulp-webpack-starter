@@ -40,12 +40,10 @@ export default function dropdownSelect() {
     });
   });
 
-  const nameInput = document.querySelector('input');
+  // const nameInput = document.querySelector('input');
   const formEl = document.querySelector('form');
 
   formEl.addEventListener('submit', function (e) {
     e.preventDefault();
-
-    console.log(nameInput.value);
   });
 }
