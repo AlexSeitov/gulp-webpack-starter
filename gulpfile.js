@@ -68,12 +68,14 @@ export const html = () => {
     .src(paths.src.html)
     .pipe(fileinclude({ prefix: '@@' }))
     .pipe(replace(/\.jpg/g, '.webp'))
-    .pipe(htmlbeautify({ indent_size: 2 }))
     .pipe(
       htmlmin({
+        collapseWhitespace: true,
+        preserveLineBreaks: true,
         removeComments: true
       })
     )
+    .pipe(htmlbeautify({ indent_size: 2 }))
     .pipe(gulp.dest(buildFolder))
     .pipe(browserSync.stream());
 };

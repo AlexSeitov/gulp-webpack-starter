@@ -47,6 +47,7 @@ npm run build
 - [jpg to webp](https://github.com/sindresorhus/gulp-webp),
 - compression images, svg, gif: [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin), [gulp-svgmin](https://github.com/ben-eb/gulp-svgmin), [imagemin-gifsicle](https://github.com/imagemin/imagemin-gifsicle)  
 - [webpack dev server](https://webpack.js.org/configuration/dev-server/)
+- [gulp-favicons](https://github.com/rejas/gulp-favicons)
 - vanilla javascript, es6 modules
 
 ##### linters:
@@ -66,7 +67,7 @@ npm run build
 ### Not support :warning:
 &nbsp; IE11
 
-### Copy dependencies into package.json
+### Copy dependencies into package.json if you need
 ```
 "dependencies": {
     "vanilla-lazyload": "^17.8.2",
